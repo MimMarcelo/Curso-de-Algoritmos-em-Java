@@ -38,6 +38,34 @@ public class IfElse {
     }
   }
   
+  public static void NextCharacter() {
+    System.out.print("Informe uma letra do alfabeto: ");
+    char letra = s.next().charAt(0);
+    System.out.println("Qual letra você gostaria de saber?");
+    System.out.println("1: Próxima");
+    System.out.println("2: Anterior");
+    switch(s.nextInt()){
+      case 1:
+        if(letra == 'z' || letra == 'Z'){
+          System.out.printf("A letra '%c é a última do alfabeto", letra);
+        }
+        else{
+          System.out.printf("A letra seguinte a '%c' é a letra '%c'", letra, (letra+1));
+        }
+        break;
+      case 2:
+        if(letra == 'a' || letra == 'A'){
+          System.out.printf("A letra '%c' é a primeira do alfabeto", letra);
+        }
+        else{
+          System.out.printf("A letra anterior a '%c' é a letra '%c'", letra, (letra-1));
+        }
+        break;
+      default:
+        System.out.println("Opção inválida");
+    }
+  }
+  
   public static void mathSkill() {
     System.out.println("Quanto é 3 + 3?");
     int r1 = s.nextInt();

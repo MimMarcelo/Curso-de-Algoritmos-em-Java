@@ -20,7 +20,8 @@ public class CursoAlgoritmosJava {
         //IfElse.evenOrOdd();
         //IfElse.vowelOrConsonant();
         //IfElse.mathSkill();
+        IfElse.NextCharacter();
         //SwitchCase.monthNames();
-        SwitchCase.dayOfWeek();
+        //SwitchCase.dayOfWeek();
     }
 }
