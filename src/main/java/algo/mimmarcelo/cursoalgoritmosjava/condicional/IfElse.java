@@ -172,4 +172,45 @@ public class IfElse {
       }
     }
   }
+  
+  public static void salarialBonus() {
+    System.out.println("Quanto vendeu no mês? ");
+    float vendas = s.nextFloat();
+    float salario = 1100f;
+    if(vendas >= 1000){
+      salario += vendas*0.05;
+    }
+    System.out.printf("Seu salário será R$ %.2f", salario);
+  }
+  
+  public static void fuel() {
+    System.out.print("Faras uma viagem de quantos quilômetros? ");
+    float km = s.nextFloat();
+    
+    System.out.println("Abastecerás com (a)lcool ou com (g)asolina?");
+    
+    if(s.next().charAt(0) == 'a'){
+      System.out.printf("Seriam necessários %.2f litros de álcool", (km/10));
+    }
+    else{
+      System.out.printf("Seriam necessários %.2f litros de gasolina", (km/13));
+    }
+  }
+  
+  public static void goldDigging() {
+    System.out.println("Quantos gramas de ouro tens? ");
+    float ouro = s.nextFloat();
+    float total = 0;
+    if(ouro < 10){
+      total += ouro*300;
+    }
+    else if(ouro <= 100){
+      total += ouro*310;
+    }
+    else{
+      total += ouro*315;
+    }
+    System.out.printf("Você receberá R$ %.2f por esse ouro", total);
+  }
+  
 }

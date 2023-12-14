@@ -115,8 +115,6 @@ public class SwitchCase {
     System.out.print("Informe o número do mês: ");
     int m = s.nextInt();
 
-    String n = "O mês de número %d corresponde ao ";
-
     switch (m) {
       case 1:
       case 2:
@@ -124,7 +122,7 @@ public class SwitchCase {
       case 4:
       case 5:
       case 6:
-        n += "primeiro semestre";
+        System.out.printf("O mês de número %d corresponde ao primeiro semestre", m);
         break;
       case 7:
       case 8:
@@ -132,12 +130,11 @@ public class SwitchCase {
       case 10:
       case 11:
       case 12:
-        n += "segundo semestre";
+        System.out.printf("O mês de número %d corresponde ao segundo semestre", m);
         break;
       default:
-        n = "O número %d não corresponde a qualquer mês do ano";
+        System.out.printf("O número %d não corresponde a qualquer mês do ano", m);
     }
-    System.out.printf(n, m);
   }
 
   public static void dayOfWeek1() {

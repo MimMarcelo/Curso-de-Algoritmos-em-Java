@@ -20,13 +20,9 @@ public class CursoAlgoritmosJava {
       System.out.println("Curso de algoritmos em Java!");
       System.out.println("Por: Marcelo Júnior!");
 
-      firstList();
-      //IfElse.evenOrOdd();
-      //IfElse.vowelOrConsonant();
-      //IfElse.mathSkill();
-      //IfElse.nextCharacter();
-      //SwitchCase.monthNames();
-      //SwitchCase.dayOfWeek();
+//      firstList();
+      exerciseConditionals2();
+      
       System.out.println("\n\nDeseja executar outra questão? (s = sim)");
       if(s.next().charAt(0) != 's') break;
     }
@@ -83,6 +79,36 @@ public class CursoAlgoritmosJava {
         break;
       case 14:
         IfElse.nextCharacter();
+        break;
+      default:
+        System.out.println("Opção inválida!");;
+    }
+  }
+  
+  public static void exerciseConditionals2() {
+    System.out.println("*****************************************************");
+    System.out.println("**** 2º Exercício sobre estruturas condicionais *****");
+    System.out.println("*****************************************************");
+    for(int q = 1; q < 6; q++){
+      System.out.printf("* %d - Questão %d", q, q);
+      System.out.println("");
+    }
+    System.out.print("****************************** CÓDIGO DA QUESTÃO: ");
+    switch (s.nextInt()) {
+      case 1:
+        IfElse.salarialBonus();
+        break;
+      case 2:
+        IfElse.fuel();
+        break;
+      case 3:
+        IfElse.goldDigging();
+        break;
+      case 4:
+        SwitchCase.monthNames();
+        break;
+      case 5:
+        SwitchCase.yearSemester();
         break;
       default:
         System.out.println("Opção inválida!");;
